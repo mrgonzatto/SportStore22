@@ -52,7 +52,7 @@ namespace SportsStore
                     "productPagination", 
                     "Products/Page{productPage}",
                     new { 
-                        Controller = "Home", 
+                        Controller = "HomeTest", 
                         action = "PagedProducts"
                     }
                 );

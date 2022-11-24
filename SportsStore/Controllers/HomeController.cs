@@ -19,11 +19,12 @@ namespace SportsStore.Controllers
         public IActionResult Index() => View(repository.Products);
 
         [HttpGet]
-        public ViewResult PagedProducts(int productPage = 1)
+        public ViewResult PagedProducts(string category, int productPage = 1)
             => View(
                 new ProductsListViewModel
                 {
                     Products = repository.Products
+                                .Where(p => p.Category == null || p.Category == category)
                                 .OrderBy(p => p.ProductID)
                                 .Skip((productPage - 1) * PageSize)
                                 .Take(PageSize),

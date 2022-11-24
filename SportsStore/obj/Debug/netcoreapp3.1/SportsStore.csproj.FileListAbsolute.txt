@@ -64,3 +64,5 @@ D:\Unoesc\Programacao II\2022\SportsSln\SportsStore\obj\Debug\netcoreapp3.1\Spor
 D:\Unoesc\Programacao II\2022\SportsSln\SportsStore\obj\Debug\netcoreapp3.1\SportsStore.csproj.CoreCompileInputs.cache
 D:\Unoesc\Programacao II\2022\SportsSln\SportsStore\obj\Debug\netcoreapp3.1\SportsStore.genruntimeconfig.cache
 D:\Unoesc\Programacao II\2022\SportsSln\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Home\PagedProducts.cshtml.g.cs
+D:\Unoesc\Programacao II\2022\SportsSln\SportsStore\bin\Debug\netcoreapp3.1\libman.json
+D:\Unoesc\Programacao II\2022\SportsSln\SportsStore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ProductSummary.cshtml.g.cs

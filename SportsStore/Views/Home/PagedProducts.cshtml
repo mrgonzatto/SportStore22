@@ -2,12 +2,17 @@
 
 @foreach( var p in Model.Products )
 {
-    <h3>@p.Name</h3>
-    @p.Description
-    <h4>@p.Price.ToString("c")</h4>
+    <partial name="ProductSummary" model="p" />
 }
 
-<div>TESTE</div>
-
-<div page-model="@Model.PagingInfo" page-action="pagedproducts">
+<div 
+    page-model="@Model.PagingInfo" 
+    page-action="pagedproducts"
+    page-classes-enabled="true"
+    page-class="btn" 
+    page-class-normal="btn-outline-dark"
+    page-class-selected="btn-primary"
+    page-url-category="@Model.CurrentCategory"
+    class="btn-group pull-right m-1"
+>
 </div>

@@ -49,11 +49,28 @@ namespace SportsStore
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    "catpage",
+                    "{category}/Page{productPage:int}",
+                    new { Controller = "Home", action = "PagedProducts" }
+                );
+
+                endpoints.MapControllerRoute(
+                    "page",
+                    "Page{productPage:int}",
+                    new { 
+                        Controller = "Home", 
+                        action = "Index",
+                        productPage = 1
+                    }
+                );
+
+                endpoints.MapControllerRoute(
                     "productPagination", 
                     "Products/Page{productPage}",
                     new { 
                         Controller = "HomeTest", 
-                        action = "PagedProducts"
+                        action = "PagedProducts",
+                        productPage = 1
                     }
                 );
 
